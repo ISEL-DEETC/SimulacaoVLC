@@ -55,12 +55,13 @@ The steps for using the software tool to simulate an already-planned scenario ar
 6. Select whether to account for the photodiode’s capacitive behaviour by clicking on the “Capacitive Behaviour” checkbox in section B, and if so, specify how quickly or slowly the signal will curve using the “Curving Rate” field and the amount of samples will be used to represent each bit using the “Samples” field – both of which also in section B;
 7. Enable or disable the inclusion of the scenario’s resulting BER by clicking on the “Show BER at Output” checkbox in section C;
 8. Begin the simulation by clicking on the “START” button in section C;
-Methodology
-41
-4.2.3. Quick Start Guide: Lab Measurement Mode
+
+## Quick Start Guide: Lab Measurement Mode
 Once planned and simulated, a scenario can then be attempted in the laboratory, and the resulting MUX signal can be saved. However, manually decoding the data from the received signal can be very troublesome, time consuming and prone to mistakes, especially when using more complex encoding methods and/or longer data frames with fewer bits per sample. To solve this problem, a second mode was implemented into the software tool which was named the Lab Measurement Mode and allows the conversion of the received MUX signal back into navigation data semi-automatically for much greater efficiency and efficacy.
 The steps for using the software tool to decode a received MUX signal obtained in the laboratory are the following:
 1. Ensure that the switch in section D is set to “Lab Measurement”, and click on it if it is not;
 2. Choose an XLS (excel) file to decode by clicking on the “Choose File” button in section E and use the file explorer window to lead the software tool to the correct directory;
 3. Enable or disable the inclusion of the scenario’s resulting BER by clicking on the “Show BER at Output” checkbox in section C;
 4. Begin decoding the measured signal by clicking on the “START” button in section C;
+
+# FrameGen
