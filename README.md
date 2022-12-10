@@ -20,7 +20,7 @@ To open an app, first open MATLAB and type the following command in the command 
 
 Doing so, will open MATLAB App Designer from which the `.mlapp` file can be opened and run.
 
-Alternatively, the MATLAB compiler can also be used to create standalone desktop applications so that they can be run in computers that do not have MATLAB and/or the aforementioned add-ons or toolboxes installed.
+Alternatively, the [MATLAB Compiler](https://www.mathworks.com/products/compiler.html) can also be used to create standalone desktop applications so that they can be run on computers that do not have MATLAB and/or the aforementioned add-ons or toolboxes installed.
 
 # SimVLC
 
