@@ -20,7 +20,7 @@ To open an app, first open MATLAB and type the following command in the command 
 
 Doing so, will open MATLAB App Designer from which the `.mlapp` file can be opened and run.
 
-Alternatively, the [MATLAB Compiler](https://www.mathworks.com/products/compiler.html) can also be used to create standalone desktop applications so that they can be run on computers that do not have MATLAB and/or the aforementioned add-ons or toolboxes installed.
+Alternatively, the [MATLAB Compiler](https://www.mathworks.com/products/compiler.html) can be used to create standalone desktop applications so that they can be installed and run on computers that do not have MATLAB and/or the aforementioned add-ons or toolboxes installed.
 
 # SimVLC
 
@@ -65,3 +65,6 @@ The steps for using the software tool to decode a received MUX signal obtained i
 4. Begin decoding the measured signal by clicking on the “START” button in section C;
 
 # FrameGen
+
+The image below shows the app GUI.
+![FrameGen GUI](FrameGen_GUI.png)
