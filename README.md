@@ -93,6 +93,38 @@ The navigation data and is where the information necessary for indoor navigation
 **Miscellaneous Data**
 
 The Miscellaneous data field is where any additional bits are included. They can be manually inserted in the R, G, B and V fields, or set to be randomly-generated through the `Random Misc.` checkbox.
-Note: The length of this field is directly tied to the frame length and 
+Note: The length of this field is directly tied to the frame length and the bits inserted.
 
+Example 1: `Frame Length` = 64, `Cal. Curve` = 2 bits p/ level,  and `Random Misc.` enabled:
+> 64 - (5+32+12+4+4+4+1) = 2 bits remaining for the Misc. Data.
+> The 2 remaining bits will be randomly generated.
 
+Example 2: `Frame Length` = 64, `Cal. Curve` = 2 bits p/ level,  and `Random Misc.` disabled with 2 bits inserted:
+> 64 - (5+32+12+4+4+4+1) = 2 bits remaining for the Misc. Data. 
+> All inserted bits will be used.
+
+Example 3: `Frame Length` = 64, `Cal. Curve` = 2 bits p/ level,  and `Random Misc.` disabled with 3 bits inserted:
+> 64 - (5+32+12+4+4+4+1) = 2 bits remaining for the Misc. Data.
+> Only the first 2 inserted bits will be used since the data frame isn't long enough for the rest.
+
+**Stop bit**
+The stop bit indicates the end of the data frame. A 0 was chosen for this, and cannot be changed or disabled.
+
+**Frame Length**
+
+Specifies how many bits make up the data frame.
+Not that this length must be long enough to include the used fields.
+
+Since the Cell IDs, Pin1, Pin2, Steering Angle and Stop bits cannot be disabled - the data frame should always be *at least* 25 bits.
+
+## How to Use: Outputs
+
+Once the inputs have been set, click on the `START` button to generate the outputs.
+
+**R, G, B and V**
+
+The R, G, B and V fields include the data frame bits for each channel. By clicking on the `Copy R`,`Copy R`,`Copy R` and `Copy R` buttons you can copy each field to the clipboard and easily paste them in SimVLC or elsewhere.
+
+**PiscaLed Code: Data**
+
+The 
