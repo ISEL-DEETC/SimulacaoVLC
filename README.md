@@ -111,6 +111,7 @@ Example 3: `Frame Length` = 64, `Cal. Curve` = 2 bits p/ level,  and `Random Mis
 > Only the first 2 inserted bits will be used since the data frame isn't long enough for the rest.
 
 **Stop bit**
+
 The stop bit indicates the end of the data frame. A 0 was chosen for this, and cannot be changed or disabled.
 
 **Frame Length**
