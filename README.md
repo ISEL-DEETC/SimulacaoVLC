@@ -97,14 +97,17 @@ Note: The length of this field is directly tied to the frame length and the bits
 
 Example 1: `Frame Length` = 64, `Cal. Curve` = 2 bits p/ level,  and `Random Misc.` enabled:
 > 64 - (5+32+12+4+4+4+1) = 2 bits remaining for the Misc. Data.
+> 
 > The 2 remaining bits will be randomly generated.
 
 Example 2: `Frame Length` = 64, `Cal. Curve` = 2 bits p/ level,  and `Random Misc.` disabled with 2 bits inserted:
 > 64 - (5+32+12+4+4+4+1) = 2 bits remaining for the Misc. Data. 
+> 
 > All inserted bits will be used.
 
 Example 3: `Frame Length` = 64, `Cal. Curve` = 2 bits p/ level,  and `Random Misc.` disabled with 3 bits inserted:
 > 64 - (5+32+12+4+4+4+1) = 2 bits remaining for the Misc. Data.
+> 
 > Only the first 2 inserted bits will be used since the data frame isn't long enough for the rest.
 
 **Stop bit**
@@ -123,8 +126,12 @@ Once the inputs have been set, click on the `START` button to generate the outpu
 
 **R, G, B and V**
 
-The R, G, B and V fields include the data frame bits for each channel. By clicking on the `Copy R`,`Copy R`,`Copy R` and `Copy R` buttons you can copy each field to the clipboard and easily paste them in SimVLC or elsewhere.
+The R, G, B and V fields include the data frame bits for each channel. Clicking on the `Copy R`,`Copy G`,`Copy B` and `Copy V` buttons copies each field to the clipboard so that they can be easily pasted onto SimVLC or elsewhere.
 
 **PiscaLed Code: Data**
 
-The 
+The PiscaLed Code: Data field displays the hexadecimal-based code for all channels which can be used in the PiscaLed software. Clicking on the `Copy` button copies this field to the clipboard.
+
+**PiscaLed Code: Parity**
+
+FrameGen is also capable of generating the PiscaLed code for the generated data frame parity signal. Clicking on the `Copy` button copies this field to the clipboard.
