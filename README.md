@@ -1,7 +1,5 @@
 # SimulacaoVLC
 
-(Work in Progress)
-
 SimulacaoVLC is a set of MATLAB apps for planning, simulating and decoding VLC scenarios at [ISEL](https://www.isel.pt/)'s optoelectronics laboratory.
 
 It currently consists of two apps:
